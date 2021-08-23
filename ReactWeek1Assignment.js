@@ -6,6 +6,28 @@ class Student {
     }
 }
 
+const data = [
+    {
+        id: 0,
+        name: "Andrew Grozdanov",
+        email: "Grozzy09@gmail.com",
+        location: "New Kent, Virginia, USA"
+    },
+    {
+        id: 1,
+        name: "Erica Grozdanov",
+        email: "Hannoneri@gmail.com",
+        location: "New Kent, Virginia, USA"
+    },
+    {
+        id: 2,
+        name: "Mike Dougherty",
+        email: "mike.dougherty@gmail.com",
+        location: "Mechanicsville, Virginia, USA"
+    }
+
+];
+
 class Bootcamp {
     constructor(name, level, students=[]) {
         this.name = name;
@@ -25,3 +47,5 @@ class Bootcamp {
         return this.students;
     }
 }
+
+const nucamp = new Bootcamp("NuCamp", "Full Stack Web Development", ["neo@matrix.com", "biden@whitehouse.gov", "mike.dougherty@gmail.com"]);
