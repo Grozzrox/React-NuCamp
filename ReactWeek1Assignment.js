@@ -35,14 +35,14 @@ class Bootcamp {
         this.students = students;
     }
     registerStudent(studentToRegister) {
-        const currentStudent = this.students.filter(student => student === studentToRegister);
+        const currentStudent = this.students.filter(student => student === studentToRegister.email);
         
         // Check if currentStudent array is empty
         if (!currentStudent.length) {
-            this.students.push(studentToRegister);
-            console.log(`Registering ${studentToRegister} to the bootcamp ${this.level}.`);
+            this.students.push(studentToRegister.email);
+            console.log(`Registering ${studentToRegister.email} to the bootcamp ${this.level}.`);
         } else {
-            console.log(`${studentToRegister} is already registered in this bootcamp.`);
+            console.log(`${studentToRegister.name} is already registered in this bootcamp.`);
         }
         return this.students;
     }
