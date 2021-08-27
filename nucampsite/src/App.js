@@ -2,6 +2,21 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
 
+class Car {
+  constructor(make, model, year, topSpeed) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.topSpeed = topSpeed;
+  }
+  goFast() {
+    console.log(`The ${this.year} ${this.make} ${this.model} can go a top speed of ${this.topSpeed} mph!`);
+  }
+}
+
+const camry = new Car("Toyota", "Camry", 2001, 120);
+console.log(camry.goFast());
+
 class App extends Component {
   render() {
     return (
@@ -39,4 +54,5 @@ function App() {
 }
 */
 
+export { Car, camry };
 export default App;
