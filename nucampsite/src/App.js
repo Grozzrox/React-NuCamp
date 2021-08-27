@@ -14,8 +14,22 @@ class Car {
   }
 }
 
+class Bike extends Car {
+  constructor(make, model, year, topSpeed, color) {
+    super(make, model, year, topSpeed);
+    this.color = color;
+  }
+  vroom() {
+    console.log(`The ${this.color} ${this.make} goes vroom vroom down Route 66 at a speed of ${this.topSpeed} mph.`);
+  }
+}
+
 const camry = new Car("Toyota", "Camry", 2001, 120);
+const harley = new Bike("Harley Davidson", "Motorcycle", 2020, 160, "black");
+
 console.log(camry.goFast());
+console.log(harley.vroom());
+
 
 class App extends Component {
   render() {
