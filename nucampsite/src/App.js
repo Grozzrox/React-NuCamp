@@ -1,35 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
+import Directory from './components/DirectoryComponent';
 import './App.css';
-
-class Car {
-  constructor(make, model, year, topSpeed) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.topSpeed = topSpeed;
-  }
-  goFast() {
-    console.log(`The ${this.year} ${this.make} ${this.model} can go a top speed of ${this.topSpeed} mph!`);
-  }
-}
-
-class Bike extends Car {
-  constructor(make, model, year, topSpeed, color) {
-    super(make, model, year, topSpeed);
-    this.color = color;
-  }
-  vroom() {
-    console.log(`The ${this.color} ${this.make} goes vroom vroom down Route 66 at a speed of ${this.topSpeed} mph.`);
-  }
-}
-
-const camry = new Car("Toyota", "Camry", 2001, 120);
-const harley = new Bike("Harley Davidson", "Motorcycle", 2020, 160, "black");
-
-console.log(camry.goFast());
-console.log(harley.vroom());
-
 
 class App extends Component {
   render() {
@@ -40,6 +12,7 @@ class App extends Component {
             <NavbarBrand href="/">NuCamp</NavbarBrand>
           </div>
         </Navbar>
+        <Directory />
       </div>
     )
   }
@@ -68,5 +41,4 @@ function App() {
 }
 */
 
-export { Car, camry };
 export default App;
