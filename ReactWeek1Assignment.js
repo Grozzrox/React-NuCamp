@@ -49,3 +49,5 @@ class Bootcamp {
 }
 
 const nucamp = new Bootcamp("NuCamp", "Full Stack Web Development", ["neo@matrix.com", "biden@whitehouse.gov", "mike.dougherty@gmail.com"]);
+
+

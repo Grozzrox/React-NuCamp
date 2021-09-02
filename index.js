@@ -1,11 +1,12 @@
 var twilio = require('twilio');
 
 // Find your account sid and auth token in your Twilio account Console.
-var client = new twilio('ACe62dc4a18a5400003ac3e4aaa97363de', 'bbef30ce0d80aae59148a9f144181fe3');
+var client = new twilio('ACe62dc4a18a5400003ac3e4aaa97363de', '15a5129f2a19a6e694c08895dc451d38');
 
 // Send the text message.
 client.messages.create({
-  to: '+17575305870',
+  to: '+18043474652',
   from: '+14133442053',
-  body: 'Hi Daniel, this is the Donald Trump 2024 reelection team. Can we count on your vote to get Big Daddy T R U M P back in the White House? Reply with "YES" if you cool or "NO" if you like smelling Joe Biden\'s stale commie farts.'
+  body: 'What\'s up Coom! Check out my codepen: https://codepen.io/grozzrox/pen/QWvXmox' 
 });
+
